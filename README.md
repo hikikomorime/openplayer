@@ -1,4 +1,4 @@
-# openplayer
+# OpenPlayer Youtube LiveStream
 YouTube livestream radio from icecast based system on your own dedicated server or VPS.
 
 ## Minimal requirements
@@ -29,3 +29,21 @@ you can also add Let's Encrypt SSL certificate
 ./docker.sh letsencrypt-create mydomain.example.com
 ```
 ## Install FFMPEG
+
+You can use basic ffmpeg 3.x
+
+First run update
+```shell
+sudo apt update
+```
+then install the application
+```shell
+sudo apt install ffmpeg
+```
+
+To install ffmpeg 4.x you can use snap
+```shell
+sudo snap install ffmpeg
+```
+
+## Get your scripts from this repository
