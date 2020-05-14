@@ -47,3 +47,12 @@ sudo snap install ffmpeg
 ```
 
 ## Get your scripts from this repository
+
+### livestream.sh
+
+```shell
+# set the quality of your stream here
+VBR="1500k"
+FPS="24"
+QUAL="superfast"
+```
