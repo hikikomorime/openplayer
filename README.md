@@ -46,7 +46,7 @@ To install ffmpeg 4.x you can use snap
 sudo snap install ffmpeg
 ```
 
-## Get your scripts from this repository
+## Get your scripts from this repository and configure
 
 ### livestream.sh
 
