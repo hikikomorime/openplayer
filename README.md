@@ -56,3 +56,13 @@ VBR="1500k"
 FPS="24"
 QUAL="superfast"
 ```
+
+```shell
+# youtube livestream settings
+YOUTUBE_URL="rtmp://x.rtmp.youtube.com/live2"
+KEY="key_of_your_stream"
+```
+
+You should be able to get your stream key from the active live stream on your Youtube Studio
+
+![get your stream key here](https://i.imgur.com/0XWtKO5.jpg "Get your stream key here")
