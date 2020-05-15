@@ -46,6 +46,10 @@ To install ffmpeg 4.x you can use snap
 sudo snap install ffmpeg
 ```
 
+## Start your stream
+
+Go to your youtube account and
+
 ## Get your scripts from this repository and configure
 
 ### livestream.sh
@@ -63,6 +67,14 @@ YOUTUBE_URL="rtmp://x.rtmp.youtube.com/live2"
 KEY="key_of_your_stream"
 ```
 
-You should be able to get your stream key from the active live stream on your Youtube Studio
+You should be able to get your stream key from the active live stream on your Youtube Studio.
+
+Just click on the eye icon to reveal it
 
 ![get your stream key here](https://i.imgur.com/0XWtKO5.jpg "Get your stream key here")
+
+## Additional files included
+
+Overpass font - overpass-regular.ttf
+
+Youtube stream cober - livestream_cover.gif
