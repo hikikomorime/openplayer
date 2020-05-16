@@ -91,6 +91,18 @@ FONT="/PATH_TO/overpass-regular.ttf"
 NP_SONG="/PATH_TO/song.txt"
 ```
 
+Additional information concerning ffmpeg part of script (on the bottom of the file)
+
+Here you can define the font size
+```shell
+fontsize=42
+```
+
+Here you can define font color, opacity and the text position
+```shell
+ fontcolor=white@0.8: x=50: y=th
+```
+
 ### song.sh
 
 ```shell

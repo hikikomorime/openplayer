@@ -6,5 +6,6 @@ SONG_TITLE=$(curl -s 'https://YOUR_AZURACAST_URL/api/nowplaying_static/NAME_OF_Y
 # do not change this
 echo $SONG_TITLE | tee song.txt
 
+# script will run in loop - 5 seconds
   sleep 5;
 done

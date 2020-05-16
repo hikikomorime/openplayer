@@ -19,6 +19,7 @@ FONT="/PATH_TO/overpass-regular.ttf"
 # set the path to song.txt file containing current song data
 NP_SONG="/PATH_TO/song.txt"
 
+# you can but don't have to edit this (check README.md)
 ffmpeg \
     -re -f lavfi -i "movie=filename=$VIDEO_SOURCE:loop=0, setpts=N/(FRAME_RATE*TB)" \
     -thread_queue_size 512 -i "$AUDIO_SOURCE" \
