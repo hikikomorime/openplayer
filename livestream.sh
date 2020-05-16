@@ -4,13 +4,19 @@ VBR="1500k"
 FPS="24"
 QUAL="superfast"
 
+# youtube livestream settings
 YOUTUBE_URL="rtmp://x.rtmp.youtube.com/live2"
+# check the https://github.com/hikikomorime/openplayer README.md
 KEY="KEY_OF_YOUR_STREAM"
 
+# point the script to your cover gif file
 VIDEO_SOURCE="/PATH_TO/yt-radio-cover.gif"
+# enter here the URL to your icecast MP3 stream
 AUDIO_SOURCE="URL_OF_YOUR_MP3_STREAM"
-NP_SOURCE=$(curl -s 'YOUR_AZURACAST_URL/api/nowplaying_static/NAME_OF_YOUR_RADIO.json' | jshon -e "now_playing" -e "song" -e "text")
+
+# set the font which will be used by ffmpeg
 FONT="/PATH_TO/overpass-regular.ttf"
+# set the path to song.txt file containing current song data
 NP_SONG="/PATH_TO/song.txt"
 
 ffmpeg \

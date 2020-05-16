@@ -85,7 +85,9 @@ AUDIO_SOURCE="URL_OF_YOUR_MP3_STREAM"
 ...set font and the source of song titles
 
 ```shell
+# set the font which will be used by ffmpeg
 FONT="/PATH_TO/overpass-regular.ttf"
+# set the path to song.txt file containing current song data
 NP_SONG="/PATH_TO/song.txt"
 ```
 
@@ -95,6 +97,11 @@ NP_SONG="/PATH_TO/song.txt"
 # define json from which you will take the current song title
 SONG_TITLE=$(curl -s 'https://YOUR_AZURACAST_URL/api/nowplaying_static/NAME_OF_YOUR_RADIO.json' | jshon -e "now_playing" -e "song" -e "title")
 ```
+### song.txt
+
+Upload the file onto your server. It should be empty and writable.
+
+__DO NOT CHANGE THE NAME OF THE FILE - song.txt - LEAVE IT AS IS__
 
 ## Additional files included
 
