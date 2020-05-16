@@ -64,7 +64,7 @@ QUAL="superfast"
 ```shell
 # youtube livestream settings
 YOUTUBE_URL="rtmp://x.rtmp.youtube.com/live2"
-KEY="key_of_your_stream"
+KEY="KEY_OF_YOUR_STREAM"
 ```
 
 You should be able to get your stream key from the active live stream on your Youtube Studio.
@@ -72,6 +72,28 @@ You should be able to get your stream key from the active live stream on your Yo
 Just click on the eye icon to reveal it
 
 ![get your stream key here](https://i.imgur.com/0XWtKO5.jpg "Get your stream key here")
+
+...next
+
+```shell
+# point the script to your cover gif file
+VIDEO_SOURCE="/PATH_TO/livestream_cover.gif"
+# enter here the URL to your icecast MP3 stream
+AUDIO_SOURCE="URL_OF_YOUR_MP3_STREAM"
+```
+
+...set font and the source of song titles
+
+```shell
+FONT="/PATH_TO/overpass-regular.ttf"
+NP_SONG="/PATH_TO/song.txt"
+```
+
+..optionally (only if you wish to use text variable in ffmpeg)
+
+```shell
+NP_SOURCE=$(curl -s 'https://YOUR_AZURACAST_URL/api/nowplaying_static/NAME_OF_YOUR_RADIO.json' | jshon -e "now_playing" -e "song" -e "text")
+```
 
 ## Additional files included
 
