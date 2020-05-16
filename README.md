@@ -89,10 +89,11 @@ FONT="/PATH_TO/overpass-regular.ttf"
 NP_SONG="/PATH_TO/song.txt"
 ```
 
-..optionally (only if you wish to use text variable in ffmpeg)
+### song.sh
 
 ```shell
-NP_SOURCE=$(curl -s 'https://YOUR_AZURACAST_URL/api/nowplaying_static/NAME_OF_YOUR_RADIO.json' | jshon -e "now_playing" -e "song" -e "text")
+# define json from which you will take the current song title
+SONG_TITLE=$(curl -s 'https://YOUR_AZURACAST_URL/api/nowplaying_static/NAME_OF_YOUR_RADIO.json' | jshon -e "now_playing" -e "song" -e "title")
 ```
 
 ## Additional files included
