@@ -11,6 +11,8 @@ I suggest you to use at least VPS with:
 System I have tested this out:
 Ubuntu 20.04 LTS
 
+---
+
 ##  Installing AzuraCast (docker)
 The easiest way to run your own radio on the dedicated server is to install [AzuraCast](https://www.azuracast.com "AzuraCast Homepage").
 
@@ -28,6 +30,9 @@ you can also add Let's Encrypt SSL certificate
 ```bash
 ./docker.sh letsencrypt-create mydomain.example.com
 ```
+
+---
+
 ## Install FFMPEG
 
 You can use basic ffmpeg 3.x
@@ -45,10 +50,11 @@ To install ffmpeg 4.x you can use snap
 ```shell
 sudo snap install ffmpeg
 ```
+---
 
 ## Start your stream
 
-Go to your youtube account and
+Go to your youtube account and set the new live stream
 
 ## Get your scripts from this repository and configure
 
@@ -115,8 +121,10 @@ Upload the file onto your server. It should be empty and writable.
 
 __DO NOT CHANGE THE NAME OF THE FILE - song.txt - LEAVE IT AS IS__
 
+---
+
 ## Additional files included
 
 Overpass font - overpass-regular.ttf
 
-Youtube stream cober - livestream_cover.gif
+Youtube stream cover you can use - livestream_cover.gif
